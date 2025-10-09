@@ -1,7 +1,6 @@
 package kr.hhplus.be.server.domain.point.entity;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

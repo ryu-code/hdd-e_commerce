@@ -8,8 +8,7 @@ import java.util.List;
 
 @Entity
 @Data
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "point")
+@NoArgsConstructor
 public class Point {
 
     @Id

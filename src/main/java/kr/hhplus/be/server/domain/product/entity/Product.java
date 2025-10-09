@@ -1,22 +1,23 @@
 package kr.hhplus.be.server.domain.product.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AccessLevel;
-import lombok.Getter;
+import jakarta.persistence.*;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Data
+@NoArgsConstructor
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long productId;
+    @Column(name = "product_id")
+    private Long id;
 
+    @Column(nullable = false)
+    private Long userId;
+
+    @Column(nullable = false)
     private Long point;
 
     private Long updateMillis;

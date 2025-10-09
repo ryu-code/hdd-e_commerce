@@ -4,66 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="139dbca8-698c-49af-9592-fd56835b9b44" name="Changes" comment="1. 에러 응답 구현&#10; - ErrorResponse.java&#10;2. 잔액 충전 / 조회 API 구현">
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/server.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/server.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/common/custom/ProductExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/entity/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/kr/hhplus/be/server/ServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/kr/hhplus/be/server/ServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/kr/hhplus/be/server/config/jpa/JpaConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/kr/hhplus/be/server/config/jpa/JpaConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/kr/hhplus/be/server/ServerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/kr/hhplus/be/server/ServerApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/kr/hhplus/be/server/TestcontainersConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/kr/hhplus/be/server/TestcontainersConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/kr.hhplus.be.server.ServerApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/kr.hhplus.be.server.ServerApplicationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/kr.hhplus.be.server.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/kr.hhplus.be.server.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-kr.hhplus.be.server.ServerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-kr.hhplus.be.server.ServerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ServletInitializer.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/TestcontainersConfiguration.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#ib_16384_1.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/#ib_16384_1.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#innodb_redo/#ib_redo10_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#innodb_redo/#ib_redo11_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#innodb_redo/#ib_redo12_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#innodb_redo/#ib_redo13_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#innodb_redo/#ib_redo14_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/#innodb_redo/#ib_redo9" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/#innodb_redo/#ib_redo9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/binlog.000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/binlog.000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/mysql/general_log_213.sdi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/mysql/slow_log_214.sdi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/sys/sys_config.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/sys/sys_config.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/common/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/common/ErrorResponse.java" afterDir="false" />
+    <list default="true" id="139dbca8-698c-49af-9592-fd56835b9b44" name="Changes" comment="1. Point, PointHistory Entity 수정&#10;2. Service / ServiceImpl 이었던 것을 Service로 합치기">
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/entity/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/entity/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/entity/PointHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/entity/PointHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/service/PointService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/service/PointService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/service/PointServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/service/ProductServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -325,7 +271,7 @@
       <workItem from="1759974911219" duration="5497000" />
       <workItem from="1759984076985" duration="681000" />
       <workItem from="1759984788539" duration="67000" />
-      <workItem from="1759984878548" duration="350000" />
+      <workItem from="1759984878548" duration="914000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -351,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759976173284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1. Point, PointHistory Entity 수정&#10;2. Service / ServiceImpl 이었던 것을 Service로 합치기">
+      <option name="closed" value="true" />
+      <created>1759985348588</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759985348588</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +325,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="1. 에러 응답 구현&#10; - ErrorResponse.java&#10;2. 잔액 충전 / 조회 API 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. 에러 응답 구현&#10; - ErrorResponse.java&#10;2. 잔액 충전 / 조회 API 구현" />
+    <MESSAGE value="1. Point, PointHistory Entity 수정&#10;2. Service / ServiceImpl 이었던 것을 Service로 합치기" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Point, PointHistory Entity 수정&#10;2. Service / ServiceImpl 이었던 것을 Service로 합치기" />
   </component>
 </project>

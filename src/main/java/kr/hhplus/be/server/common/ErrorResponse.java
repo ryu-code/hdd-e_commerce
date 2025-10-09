@@ -1,5 +1,6 @@
 package kr.hhplus.be.server.common;
 
+import kr.hhplus.be.server.common.custom.OrderExceptionHandler;
 import kr.hhplus.be.server.common.custom.PointExceptionHandler;
 import kr.hhplus.be.server.common.custom.ProductExceptionHandler;
 import org.springframework.http.HttpStatus;
@@ -23,6 +24,15 @@ public class ErrorResponse {
 
     @ExceptionHandler(ProductExceptionHandler.ProductNotFoundException.class)
     public ResponseEntity<Map<String, String>> handleProductNotFound(ProductExceptionHandler.ProductNotFoundException ex) {
+        Map<String, String> body = Map.of(
+                "error", "PRODUCT_NOT_FOUND",
+                "message", ex.getMessage()
+        );
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(body);
+    }
+
+    @ExceptionHandler(OrderExceptionHandler.OrderCntNotEnoughException.class)
+    public ResponseEntity<Map<String, String>> handleOrderCntNotEnough(OrderExceptionHandler.OrderCntNotEnoughException ex) {
         Map<String, String> body = Map.of(
                 "error", "PRODUCT_NOT_FOUND",
                 "message", ex.getMessage()

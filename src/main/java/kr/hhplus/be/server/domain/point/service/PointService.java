@@ -1,5 +1,6 @@
 package kr.hhplus.be.server.domain.point.service;
 
+import jakarta.transaction.Transactional;
 import kr.hhplus.be.server.common.custom.PointExceptionHandler;
 import kr.hhplus.be.server.domain.point.entity.PointHistory;
 import kr.hhplus.be.server.domain.point.repository.PointHistoryRepository;
@@ -29,6 +30,7 @@ public class PointService {
         }
     }
 
+    @Transactional
     public Point savePoint(Long userId, Long amount) {
 
         try {

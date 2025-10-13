@@ -71,6 +71,8 @@ public class OrderService {
                 return putOrder;
             }
 
+            return order;
+
         } catch (Exception e) {
             throw new RuntimeException("상품 조회 중 오류가 발생했습니다.", e);
         }

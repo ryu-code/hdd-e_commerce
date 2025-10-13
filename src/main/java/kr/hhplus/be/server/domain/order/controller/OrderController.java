@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/point")
+@RequestMapping("/order")
 public class OrderController {
 
     private final OrderService orderService;

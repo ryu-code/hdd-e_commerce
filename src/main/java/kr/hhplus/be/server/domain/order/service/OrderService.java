@@ -3,6 +3,8 @@ package kr.hhplus.be.server.domain.order.service;
 import jakarta.transaction.Transactional;
 import kr.hhplus.be.server.common.custom.OrderExceptionHandler;
 import kr.hhplus.be.server.common.custom.ProductExceptionHandler;
+import kr.hhplus.be.server.domain.coupon.entity.CouponHistory;
+import kr.hhplus.be.server.domain.coupon.repository.CouponHistoryRepository;
 import kr.hhplus.be.server.domain.order.dto.request.OrderReq;
 import kr.hhplus.be.server.domain.order.entity.Order;
 import kr.hhplus.be.server.domain.order.entity.OrderHistory;
@@ -14,6 +16,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.beans.Transient;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -22,6 +25,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final ProductRepository productRepository;
     private final OrderHistoryRepository orderHistoryRepository;
+    private final CouponHistoryRepository couponHistoryRepository;
 
     @Transactional
     public Order putOrder(OrderReq orderReq) {
@@ -38,19 +42,35 @@ public class OrderService {
                 throw new OrderExceptionHandler.OrderCntNotEnoughException("상품 수가 충분하지 않습니다.");
             }
 
-            Order putOrder = orderRepository.save(order);
+            CouponHistory couponHistory = new CouponHistory();
+            List<CouponHistory> couponHistories = couponHistoryRepository.findByUserIdOrderByDiscountRate(orderReq.userId());
 
-            if (putOrder != null) {
-                OrderHistory orderHistory = new OrderHistory();
-                orderHistory.setProductId(putOrder.getProductId());
-                orderHistory.setUserId(putOrder.getUserId());
-                orderHistory.setPoint(putOrder.getPoint());
-                orderHistory.setProductCnt(putOrder.getProductCnt());
+            if (couponHistories != null) {
 
-                orderHistoryRepository.save(orderHistory);
+                // 구매
+                order.setPoint(orderReq.point() * (100 - couponHistories.get(0).getDiscountRate()) / 100);
+                Order putOrder = orderRepository.save(order);
+
+                if (putOrder != null) {
+                    // 주문 히스토리
+                    OrderHistory orderHistory = new OrderHistory();
+                    orderHistory.setProductId(putOrder.getProductId());
+                    orderHistory.setUserId(putOrder.getUserId());
+                    orderHistory.setPoint(putOrder.getPoint());
+                    orderHistory.setProductCnt(putOrder.getProductCnt());
+
+                    orderHistoryRepository.save(orderHistory);
+
+                    // 쿠폰 use_yn = Y로 변경
+                    couponHistory.setUseYn("Y");
+                    couponHistory.setOrderId(putOrder.getId());
+
+                    couponHistoryRepository.save(couponHistory);
+                }
+
+                return putOrder;
             }
 
-            return putOrder;
         } catch (Exception e) {
             throw new RuntimeException("상품 조회 중 오류가 발생했습니다.", e);
         }

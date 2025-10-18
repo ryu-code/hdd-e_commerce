@@ -52,6 +52,10 @@ public class OrderService {
                 Order putOrder = orderRepository.save(order);
 
                 if (putOrder != null) {
+                    // 상품 남은 수
+                    product.setCount(product.getCount() - order.getProductCnt());
+                    productRepository.save(product);
+
                     // 주문 히스토리
                     OrderHistory orderHistory = new OrderHistory();
                     orderHistory.setProductId(putOrder.getProductId());

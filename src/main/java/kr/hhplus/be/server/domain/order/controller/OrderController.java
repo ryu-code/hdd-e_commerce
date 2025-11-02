@@ -21,7 +21,15 @@ public class OrderController {
 
     @Operation(
             summary = "사용자가 상품을 주문",
-            description = "사용자가 주문한 상품을 저장하고, 포인트를 관리합니다."
+            description = """
+            <pre>
+            {
+              "productId": "1",
+              "userId": "1",
+              "orderCnt": "3"
+            }
+            </pre>
+            """
     )
     @ApiResponses({
             @ApiResponse(

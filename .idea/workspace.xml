@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="139dbca8-698c-49af-9592-fd56835b9b44" name="Changes" comment="[bugfix] ERD 추가">
+    <list default="true" id="139dbca8-698c-49af-9592-fd56835b9b44" name="Changes" comment="[feature] swagger로 API 명세서 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/controller/PointController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/controller/PointController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/controller/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,7 +283,8 @@
       <workItem from="1760362865275" duration="280000" />
       <workItem from="1760798640434" duration="2950000" />
       <workItem from="1762054368109" duration="793000" />
-      <workItem from="1762065826993" duration="801000" />
+      <workItem from="1762065826993" duration="1880000" />
+      <workItem from="1762067745618" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -382,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762066167916</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[feature] swagger로 API 명세서 작성">
+      <option name="closed" value="true" />
+      <created>1762066909405</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1762066909405</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,6 +430,7 @@
     <MESSAGE value="요구사항 정의" />
     <MESSAGE value="[bugfix] 상품 구매시 잔여 수량 수정 로직 추가" />
     <MESSAGE value="[bugfix] ERD 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="[bugfix] ERD 추가" />
+    <MESSAGE value="[feature] swagger로 API 명세서 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] swagger로 API 명세서 작성" />
   </component>
 </project>

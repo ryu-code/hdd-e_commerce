@@ -32,11 +32,11 @@ public class OrderService {
         try {
             Order order = new Order();
             order.setProductId(orderReq.productId());
-            order.setPoint(orderReq.point());
             order.setUserId(orderReq.userId());
             order.setProductCnt(orderReq.orderCnt());
 
             Product product = productRepository.findByProductId(orderReq.productId());
+            order.setPoint(product.getPoint());
 
             if (product.getCount() < orderReq.orderCnt()) {
                 throw new OrderExceptionHandler.OrderCntNotEnoughException("상품 수가 충분하지 않습니다.");

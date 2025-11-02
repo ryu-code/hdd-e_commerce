@@ -20,7 +20,13 @@ public class ProductController {
 
     @Operation(
             summary = "상품 상세 조회",
-            description = "상품ID로 조회합니다."
+            description = """
+            <pre>
+            {
+              "productId": "1"
+            }
+            </pre>
+            """
     )
     @ApiResponses({
             @ApiResponse(

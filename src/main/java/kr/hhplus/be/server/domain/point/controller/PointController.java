@@ -23,7 +23,13 @@ public class PointController {
 
     @Operation(
             summary = "사용자의 포인트 조회",
-            description = "사용자 ID로 포인트 정보를 조회합니다."
+            description = """
+            <pre>
+            {
+              "userId": "1"
+            }
+            </pre>
+            """
     )
     @ApiResponses({
             @ApiResponse(
@@ -45,7 +51,14 @@ public class PointController {
 
     @Operation(
             summary = "사용자의 포인트 충전",
-            description = "사용자의 포인트를 충전합니다."
+            description = """
+            <pre>
+            {
+              "userId": "1",
+              "amount": "1000"
+            }
+            </pre>
+            """
     )
     @ApiResponses({
             @ApiResponse(

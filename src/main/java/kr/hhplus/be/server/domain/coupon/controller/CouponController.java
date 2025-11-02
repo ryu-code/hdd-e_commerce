@@ -24,7 +24,13 @@ public class CouponController {
 
     @Operation(
             summary = "사용자에게 쿠폰 발급",
-            description = "선착순으로 당첨된 사용자에게 쿠폰을 발급합니다."
+            description = """
+            <pre>
+            {
+              "userId": "1"
+            }
+            </pre>
+            """
     )
     @ApiResponses({
             @ApiResponse(

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="139dbca8-698c-49af-9592-fd56835b9b44" name="Changes" comment="요구사항 정의">
+    <list default="true" id="139dbca8-698c-49af-9592-fd56835b9b44" name="Changes" comment="[bugfix] ERD 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/controller/PointController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/point/controller/PointController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="server" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -93,7 +100,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.ServerApplication.executor&quot;: &quot;Run&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ryu/study/step2/e-commerce/src/main/java/kr/hhplus/be/server/domain/coupon&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ryu/study/step2/e-commerce&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -112,6 +119,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/domain/product/service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/java/kr/hhplus/be/server/point" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src" />
@@ -274,7 +282,9 @@
       <workItem from="1760358614198" duration="3457000" />
       <workItem from="1760362119975" duration="706000" />
       <workItem from="1760362865275" duration="280000" />
-      <workItem from="1760798640434" duration="2187000" />
+      <workItem from="1760798640434" duration="2950000" />
+      <workItem from="1762054368109" duration="793000" />
+      <workItem from="1762065826993" duration="801000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -356,7 +366,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760803817086</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[bugfix] 상품 구매시 잔여 수량 수정 로직 추가">
+      <option name="closed" value="true" />
+      <created>1760803980668</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760803980668</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[bugfix] ERD 추가">
+      <option name="closed" value="true" />
+      <created>1762066167916</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1762066167916</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +420,8 @@
     <MESSAGE value="1. 주문 / 결제 API 구현&#10; - 할인 쿠폰 사용했을 때 추가&#10;2. 선착순 쿠폰 API 구현" />
     <MESSAGE value="-" />
     <MESSAGE value="요구사항 정의" />
-    <option name="LAST_COMMIT_MESSAGE" value="요구사항 정의" />
+    <MESSAGE value="[bugfix] 상품 구매시 잔여 수량 수정 로직 추가" />
+    <MESSAGE value="[bugfix] ERD 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[bugfix] ERD 추가" />
   </component>
 </project>
